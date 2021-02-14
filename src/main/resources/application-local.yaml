@@ -1,0 +1,54 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+api:
+  user-settings:
+    url: http://localhost:9000/accounts
+
+server:
+  port: 8080
+management:
+  port: 8081
+
+accounts:
+  - name: account-1
+    order: 1
+    currency: EUR
+    balance: '100'
+  - name: account-2
+    order: 2
+    currency: EUR
+    balance: '200'
+  - name: account-3
+    order: 3
+    currency: EUR
+    balance: '300'
+  - name: account-4
+    order: 4
+    currency: EUR
+    balance: '400'
+  - name: account-5
+    order: 5
+    currency: EUR
+    balance: '500'
+  - name: account-6
+    order: 6
+    currency: EUR
+    balance: '600'
+  - name: account-7
+    order: 7
+    currency: EUR
+    balance: '700'
+  - name: account-8
+    order: 8
+    currency: EUR
+    balance: '800'
+  - name: account-9
+    order: 9
+    currency: EUR
+    balance: '900'
+  - name: account-10
+    order: 10
+    currency: EUR
+    balance: '1000'
