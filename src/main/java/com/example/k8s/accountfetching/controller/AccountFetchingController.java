@@ -43,11 +43,12 @@ public class AccountFetchingController {
             accounts
                     .forEach(account -> {
                         Optional<UserSettingsAccount> userSettingsAccountOptional = userSettingsAccountList.stream()
-                                .filter(x -> Objects.equals(account.getName().toUpperCase(), x.getName().toUpperCase()))
+                                .filter(x -> Objects.equals(account.getId(), x.getId()))
                                 .findFirst();
 
                         if (userSettingsAccountOptional.isPresent()) {
                             account.setOrder(userSettingsAccountOptional.get().getOrder());
+                            account.setName(userSettingsAccountOptional.get().getName());
                         }
                     });
 

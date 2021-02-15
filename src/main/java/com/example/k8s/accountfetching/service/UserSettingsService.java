@@ -18,7 +18,7 @@ public class UserSettingsService {
 
     public List<UserSettingsAccount> getUserSettingsAccounts() {
 
-        String url = String.format("%s/settings/account-order", baseUrl);
+        String url = String.format("%s/settings/account-settings", baseUrl);
         ResponseEntity<UserSettingsAccount[]> response =
                 restTemplateClient.getForEntity(
                         url,
