@@ -1,10 +1,19 @@
 package com.example.k8s.accountfetching.domain;
 
 public class Account {
+    private Integer id;
     private String name;
     private Integer order;
     private Double balance;
     private String currency;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
